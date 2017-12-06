@@ -3,7 +3,7 @@ import sys
 input = sys.argv[1]
 
 input = input.replace(' ', '/**/')
-input = input.replace(',', '/*,*/')
+input = input.replace(',', '/*!,*/')
 if 'select' in input:
     input = input.replace('select','selSELECTect')
 elif 'SELECT' in input:
